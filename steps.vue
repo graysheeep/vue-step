@@ -19,6 +19,17 @@ export default {
       type: Number,
       default: 0
     }
+  },
+  ready () {
+    this.setChildrenProps()
+  },
+  methods: {
+    setChildrenProps () {
+      const len = this.$children.length - 1
+      this.$children.forEach((child, index) => {
+        child.lastStep = index === len
+      })
+    }
   }
 }
 </script>
