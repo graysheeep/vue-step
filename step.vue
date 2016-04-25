@@ -2,7 +2,9 @@
     <div class="vux-step">
         <div class="vux-step-tail" v-if="!lastStep"></div>
         <div class="vux-step-head">
-
+            <div class="vux-step-head-inner">
+                <span class="head-inner-icon"></span>
+            </div>
         </div>
         <div class="vux-step-content">
             <div class="vux-step-title">{{title}}</div>
